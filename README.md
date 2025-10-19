@@ -28,13 +28,15 @@ Online shopping presents a vast array of choices, making it increasingly challen
 
 ## Preview
 
-<img width="849" alt="1" src="https://github.com/HananeNadi/Sentiment-Analysis-of-Amazon-Reviews/assets/127529925/b4031cca-4f3c-45a6-ad70-b484e1ecc4a9">
+![1](https://github.com/user-attachments/assets/b9675fb0-7abb-4371-b2cf-a4f2f580dfe4)
+![2](https://github.com/user-attachments/assets/df57a8ab-f6ee-4f7a-b894-8278505c6201)
+<img width="905" height="453" alt="3 3" src="https://github.com/user-attachments/assets/ea0f2400-7136-4ec9-97b7-12f78a7e4b89" />
+![3](https://github.com/user-attachments/assets/9dc3a12b-cd42-48f4-8b69-b03b5d4bf92d)
 
-<img width="849" alt="2" src="https://github.com/HananeNadi/Sentiment-Analysis-of-Amazon-Reviews/assets/127529925/9ef75d23-7deb-4437-bde2-6975fb8969ff">
 
-<img width="849" alt="3" src="https://github.com/HananeNadi/Sentiment-Analysis-of-Amazon-Reviews/assets/127529925/a7a161d0-ac0f-4eb8-9531-69384e9ed52f">
 
-<img width="849" alt="4" src="https://github.com/HananeNadi/Sentiment-Analysis-of-Amazon-Reviews/assets/127529925/4b9c8825-7636-411c-b65b-2d079828199c">
+
+
 
 ## Behind the scenes
 
