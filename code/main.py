@@ -11,7 +11,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import urllib.parse
 
-app = Flask(__name__)#instance of the app
+app = Flask(__name__)# instance of the app
 
 # MODEL AND VECTOR SETUP 
 model = joblib.load(open('./models/Logistic_regression_reviews.joblib', 'rb'))
@@ -21,11 +21,7 @@ CSV_FILE_PATH = '../data/DATA.csv'
 corpus = []
 lemmatizer = WordNetLemmatizer()
 
-<<<<<<< HEAD
 #  Scrape.do API token
-=======
-# Scrape.do API token
->>>>>>> 6e97ae54a0700ccbe638a187bbacc862c8043c47
 SCRAPE_DO_TOKEN = "c4f97c7b4dfb4dff91a0c20eecfe6406ca95efdccf5"
 
 
