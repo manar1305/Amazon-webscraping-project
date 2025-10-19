@@ -38,12 +38,12 @@ Online shopping presents a vast array of choices, making it increasingly challen
 
 ## Workflow Summary
 
-1. 🔗 **Amazon URL**  
-2. 🕷️ **Scraping** using Scrap.do + BeautifulSoup  
-3. 📄 **Save as CSV**  
-4. 🧹 **Data Cleaning** using Pandas  
-5. 💾 **Load Pretrained Models** (TF-IDF + Logistic Regression via joblib)  
-6. 🎯 **Sentiment Prediction** (Positive / Negative)
+1. **Amazon URL**  
+2. **Scraping** using Scrap.do + BeautifulSoup  
+3. **Save as CSV**  
+4. **Data Cleaning** using Pandas  
+5. **Load Pretrained Models** (TF-IDF + Logistic Regression via joblib)  
+6. **Sentiment Prediction** (Positive / Negative)
 
 
 ## 📡 Requirements & Scraping Strategy
@@ -59,33 +59,31 @@ Web scraping Amazon can be challenging due to strict anti-bot systems such as CA
 **3.** The project then parses the returned HTML using BeautifulSoup (bs4) and Requests to extract review text, ratings, and metadata.
 
 
-## 🧠 Conclusion: Discussion on Results and Limitations
+##  Conclusion: Discussion on Results and Limitations
 
 This project was driven by a simple yet powerful intuition: **customer reviews can serve as a reliable indicator of product quality**. By applying sentiment analysis and machine learning, we successfully built a prototype capable of predicting review polarity with reasonable accuracy.
 
 However, several **limitations** emerged:
 
-- 🔢 **Small Dataset**: Only 932 reviews were scraped, due to the Scrape.do API’s free tier limit of 1000 requests. This is insufficient for training a production-grade sentiment model. A larger dataset would yield significantly better performance.
+- **Small Dataset**: Only 932 reviews were scraped, due to the Scrape.do API’s free tier limit of 1000 requests. This is insufficient for training a production-grade sentiment model. A larger dataset would yield significantly better performance.
   
-- 💬 **Data Quality**: Reviews may be fake or biased, introducing noise in predictions.
+- **Data Quality**: Reviews may be fake or biased, introducing noise in predictions.
 
-- 🌐 **Platform Limitation**: Our model is trained only on Amazon reviews and may not generalize to other platforms like eBay or AliExpress.
+- **Platform Limitation**: Our model is trained only on Amazon reviews and may not generalize to other platforms like eBay or AliExpress.
 
-- 🧠 **Model Simplicity**: We used traditional ML models (TF-IDF + Logistic Regression). More advanced NLP models (e.g., BERT) could capture context more effectively.
+- **Model Simplicity**: We used traditional ML models (TF-IDF + Logistic Regression). More advanced NLP models (e.g., BERT) could capture context more effectively.
 
-- 🗣️ **Language Limitation**: The current system only supports English reviews.
+- **Language Limitation**: The current system only supports English reviews.
 
----
 
 ### 🚀 Future Improvements
 
 To improve this project:
 
-- Scrape **larger, more diverse datasets** to improve model training.
-- Adopt **state-of-the-art NLP models** like BERT or RoBERTa.
-- Implement **fake review detection** to improve data quality.
-- Extend the system to **support multiple e-commerce platforms** and **languages**.
-- Add a **comparison dashboard** for reviewing multiple products side-by-side.
+- Scrape larger, more diverse datasets to improve model training.
+- Adopt state-of-the-art NLP models like BERT or RoBERTa.
+- Extend the system to support multiple e-commerce platforms and languages.
+- Add a comparison dashboard for reviewing multiple products side-by-side.
 
 ## Authors
 - [@manar1305](https://github.com/manar1305)
