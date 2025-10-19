@@ -36,11 +36,20 @@ Online shopping presents a vast array of choices, making it increasingly challen
 
 
 
+## Workflow Summary
 
+Amazon URL 
+   ↓
+Scraping (Scrap.do + BeautifulSoup) 
+   ↓
+CSV File 
+   ↓
+Data Cleaning (Pandas) 
+   ↓
+Load Pretrained TF-IDF & Logistic Regression Models (joblib)
+   ↓
+Sentiment Prediction
 
-## Behind the scenes
-
-![URL](https://github.com/HananeNadi/Sentiment-Analysis-of-Amazon-Reviews/assets/127529925/dd33282a-e7b0-44d6-a457-09faace5e8f9)
 
 ## Requirement
 
