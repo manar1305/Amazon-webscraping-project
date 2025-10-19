@@ -38,17 +38,12 @@ Online shopping presents a vast array of choices, making it increasingly challen
 
 ## Workflow Summary
 
-Amazon URL 
-   ↓
-Scraping (Scrap.do + BeautifulSoup) 
-   ↓
-CSV File 
-   ↓
-Data Cleaning (Pandas) 
-   ↓
-Load Pretrained TF-IDF & Logistic Regression Models (joblib)
-   ↓
-Sentiment Prediction
+1. 🔗 **Amazon URL**  
+2. 🕷️ **Scraping** using Scrap.do + BeautifulSoup  
+3. 📄 **Save as CSV**  
+4. 🧹 **Data Cleaning** using Pandas  
+5. 💾 **Load Pretrained Models** (TF-IDF + Logistic Regression via joblib)  
+6. 🎯 **Sentiment Prediction** (Positive / Negative)
 
 
 ## Requirement
@@ -64,5 +59,5 @@ Web scraping Amazon can be challenging due to strict anti-bot systems such as CA
 **3.** The project then parses the returned HTML using BeautifulSoup (bs4) and Requests to extract review text, ratings, and metadata.
 
 ## Authors
-
+-[@manar1305](https://github.com/manar1305)
 - [@HananeNadi](https://github.com/HananeNadi)
