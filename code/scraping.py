@@ -8,7 +8,7 @@ from datetime import datetime
 import os
 
 # Config
-TOKEN = "75250c6ad9364162a86488532b07de015ee64cbc94c"
+TOKEN = "use your own token here from scrape.do"
 MAX_PRODUCTS_PER_CATEGORY = 20
 MAX_REVIEWS_PER_PRODUCT = 5
 

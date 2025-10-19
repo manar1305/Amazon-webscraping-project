@@ -22,7 +22,7 @@ corpus = []
 lemmatizer = WordNetLemmatizer()
 
 #  Scrape.do API token
-SCRAPE_DO_TOKEN = "c4f97c7b4dfb4dff91a0c20eecfe6406ca95efdccf5"
+SCRAPE_DO_TOKEN = "use your own token here from scrape.do"
 
 
 # ROUTES 
