@@ -7,6 +7,31 @@ Additionally, customers benefit from this project by quickly identifying high-qu
 
 This research presents a novel methodology that leverages sentiment analysis combined with machine learning to simplify product selection. By addressing the unique challenges faced by sellers and buyers alike, it enhances decision-making accuracy and efficiency within the dynamic e-commerce landscape.
 
+## 🗂️ Project Structure
+
+```bash
+WEBSCRAPING-PROJECT/
+├── code/                          # Main source code folder
+│   ├── models/                    # Serialized ML models saved with joblib (Logistic Regression + TF-IDF)
+│   ├── static/                    # Static web assets for the Flask interface (CSS, images)
+│   ├── templates/                 # HTML templates for the Flask web app
+│   ├── amazon_reviews_analysis.ipynb  # Jupyter Notebook for EDA and Machine Learning
+│   ├── scraping.py                # Script responsible for web scraping Amazon product data
+│   └── main.py                    # Flask app to serve the web interface and connect predictions
+│
+├── data/                          # CSV files used in the project
+│   ├── raw-data.csv               # Raw scraped data before preprocessing
+│   └── processed-data.csv         # Cleaned and processed data used for ML analysis
+│
+├── demo/                          # Folder containing demo materials
+│   ├── images/                    # Visualizations generated from the notebook (EDA plots, word clouds, etc.)
+│   └── videos/                    # Final project demonstration videos (e.g., amazon-project.mp4)
+│
+├── README.md                      # Project documentation (this file)
+├── requirements.txt               # Python dependencies needed to run the project
+
+```
+
 ## Key highlights :
 
 - **Data Collection**: Collected Amazon electronics reviews using the Scrape.do API, which acts as a proxy + rendering layer to bypass anti-bot measures such as CAPTCHAs. After retrieving the rendered HTML from Scrape.do, we parse and extract review text, ratings, and metadata using requests and BeautifulSoup (bs4). This approach avoids running a local JS renderer and keeps scraping logic simple and reliable
