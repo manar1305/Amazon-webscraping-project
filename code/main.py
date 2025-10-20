@@ -13,7 +13,7 @@ import urllib.parse
 
 app = Flask(__name__)
 
-# ------------------ MODEL AND VECTOR SETUP ------------------
+# MODEL AND VECTOR SETUP 
 model = joblib.load(open('./models/Logistic_regression_reviews.joblib', 'rb'))
 tfidvectorizer = joblib.load('./models/tfidfvectorizer_reviews.joblib')
 Stopwords_modified = set(stopwords.words('english')) - {'no', 'not','will', 'nor', 'but', 'however', 'although', 'yet', 'unfortunately', 'never', 'none', 'nobody', 'nowhere', 'nothing', 'neither', 'no one', 'without'}
@@ -21,16 +21,14 @@ CSV_FILE_PATH = '../data/DATA.csv'
 corpus = []
 lemmatizer = WordNetLemmatizer()
 
-# ✅ Scrape.do API token
+# Scrape.do API token
 SCRAPE_DO_TOKEN = "c4f97c7b4dfb4dff91a0c20eecfe6406ca95efdccf5"
 
 
-# ------------------ ROUTES ------------------
-
+# ROUTES 
 @app.route("/")
 def Home():
     return render_template("index.html")
-
 
 @app.route('/predict', methods=["POST"])
 def predict():
@@ -80,8 +78,7 @@ def predict():
     return render_template("index.html", prediction_text=overall_sentiment, winning=result, scroll_to_form=True)
 
 
-# ------------------  SCRAPING FUNCTION ------------------
-
+#  SCRAPING FUNCTION 
 def scrape_amazon_reviews(url):
     """
     Scrapes Amazon reviews using the Scrape.do API (with pagination support)
@@ -117,8 +114,7 @@ def scrape_amazon_reviews(url):
     return reviews
 
 
-# ------------------ SENTIMENT MAPPING ------------------
-
+#  SENTIMENT MAPPING 
 def sentiment_mapping(x):
     return "positive" if x == 1 else "negative"
 
